@@ -88,8 +88,8 @@ aggregation_method: sum # how to combine the attention contexts of multiple enco
 max_train_size: 0        # maximum size of the training data (0 for unlimited)
 max_dev_size: 0          # maximum size of the dev data
 max_test_size: 0         # maximum size of the test data
-data_dir: ../emse-data(original)           # directory containing the training data
-model_dir: ../emse-data(original)/model/hybrid
+data_dir: ../emse-data(simsbt_code_hb)           # directory containing the training data
+model_dir: ../emse-data(simsbt_code_hb)/model/hybrid
 train_prefix: train      # name of the training corpus
 script_dir: scripts      # directory where the scripts are kepts (in particular the scoring scripts)
 dev_prefix: test        # names of the development corpora
@@ -99,7 +99,7 @@ checkpoints: []          # list of checkpoints to load (in this specific order) 
 # decoding
 score_function: nltk_sentence_bleu # name of the main scoring function, inside 'evaluation.py' (used for selecting models)
 post_process_script: null # path to post-processing script (called before evaluating)
-remove_unk: False        # remove UNK symbols from the decoder output
+remove_unk: False        # remove UNK symbos from the decoder output
 beam_size: 5             # beam size for decoding (decoder is greedy by default)
 ensemble: False          # use an ensemble of models while decoding (specified by the --checkpoints parameter)
 output: null             # output file for decoding (writes to standard output by default)
@@ -110,7 +110,7 @@ average: False           # like ensemble, but instead of averaging the log-probs
 pred_edits: False
 
 # general
-gpu_id: 1                # index of the GPU to use (starts at zero)
+gpu_id: 0                # index of the GPU to use (starts at zero)
 no_gpu: False            # run on CPU only
 allow_growth: True       # allow GPU memory allocation to change during runtime
 mem_fraction: 1.0        # maximum fraction of GPU memory to use
