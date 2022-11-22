@@ -1,10 +1,8 @@
-# 1. Reference
+# 코드 주석 자동 생성 품질 개선을 위한 AST 순회 정보 활용에 관한 연구
+한국정보과학회 학술발표논문집, KCC 2022   
+[paper](https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE11113575)
 
-[GitHub - xing-hu/EMSE-DeepCom: The dataset for EMSE-DeepCom](https://github.com/xing-hu/EMSE-DeepCom)
-
-[https://xin-xia.github.io/publication/emse192.pdf](https://xin-xia.github.io/publication/emse192.pdf)
-
-# 2. Project Structure
+# 1. Project Structure
 
 - config
 - data_utils
@@ -70,7 +68,7 @@
     - translation_model.py
     - utils.py
 
-# 3. Execute File
+# 2. Execute File
 
 ### 🌼 Model Training
 
@@ -147,7 +145,7 @@ public boolean doesNotHaveIds (){
 ( MethodDeclaration entrySize ( BasicType int ) BasicType ( FormalParameter key ( ReferenceType Object ) ReferenceType ) FormalParameter ( FormalParameter value ( ReferenceType Object ) ReferenceType ) FormalParameter ( IfStatement if ( BinaryOperation ( MemberReference value ) MemberReference ( MemberReference Token.TOMBSTONE ) MemberReference ) BinaryOperation ( BlockStatement { ( ReturnStatement return ( MemberReference NUM_ ) MemberReference ) ReturnStatement ) BlockStatement ) IfStatement ( LocalVariableDeclaration int ( BasicType int ) BasicType ( VariableDeclarator size ( This HeapLRUCapacityController.this.getPerEntryOverhead ( MethodInvocation . ) MethodInvocation ) This ) VariableDeclarator ) LocalVariableDeclaration ( StatementExpression size ( Assignment ( MemberReference size ) MemberReference ( MethodInvocation sizeof ( MemberReference key ) MemberReference ) MethodInvocation ) Assignment ) StatementExpression ( StatementExpression size ( Assignment ( MemberReference size ) MemberReference ( MethodInvocation sizeof ( MemberReference value ) MemberReference ) MethodInvocation ) Assignment ) StatementExpression ( ReturnStatement return ( MemberReference size ) MemberReference ) ReturnStatement ) MethodDeclaration
 ```
 
-# 4. Our Experiments
+# 3. Our Experiments
 
 ### 🦑 DeepCom(default)
 
@@ -590,3 +588,9 @@ public boolean doesNotHaveIds (){
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | BLEU | 0.2026 | 0.1626 | 0.3820 | 0.3798 | 0.2417 | 0.3849 | 0.32178 | 0.44359 |
 | METEOR | 0.3172 | 0.2741 | 0.5126 | 0.5105 | 0.3543 | 0.5164 |  |  |
+
+# Reference
+
+[GitHub - xing-hu/EMSE-DeepCom: The dataset for EMSE-DeepCom](https://github.com/xing-hu/EMSE-DeepCom)
+
+[https://xin-xia.github.io/publication/emse192.pdf](https://xin-xia.github.io/publication/emse192.pdf)
